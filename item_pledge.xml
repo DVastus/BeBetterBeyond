@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:stateListAnimator="@animator/card_lift_on_touch"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Pledge description -->
+        <TextView
+            android:id="@+id/pledgeDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pledge Description"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <!-- Pledge condition -->
+        <TextView
+            android:id="@+id/pledgeConditionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Condition (e.g., if someone else does X)"
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+
+        <!-- Mutual pledge -->
+
+        <TextView
+            android:id="@+id/mutualPledgeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Mutual: Description here"
+            android:textSize="14sp"
+            android:textColor="#4CAF50"
+            android:visibility="gone"/>
+
+        <!-- Due date -->
+
+        <TextView
+            android:id="@+id/pledgeDueDateText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Due: 10/05/2025"
+            android:textSize="13sp"
+            android:textColor="#888888"/>
+          <!-- android:textStyle="italic" -->
+
+
+          <!-- Action buttons-->
+        <Button
+            android:id="@+id/agreePledgeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Agree to pledge"
+            style="?attr/borderlessButtonStyle"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/completeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mark as Completed"
+            android:visibility="gone"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

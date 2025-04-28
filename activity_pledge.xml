@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/pledgeDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pledge Description"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#6200EE"
+             />
+
+
+
+        <EditText
+        android:id="@+id/pledgeConditionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Condition (if someone does X...)"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#6200EE" />
+
+        <EditText
+            android:id="@+id/pledgeDueDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Due Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#6200EE" />
+
+    <EditText
+        android:id="@+id/mutualPledgeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mutual Pledge (Optional)"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#6200EE" />
+
+        <Button
+        android:id="@+id/savePledgeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Save Pledge"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Back to Home"
+        android:backgroundTint="#03DAC5"
+        android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</ScrollView>

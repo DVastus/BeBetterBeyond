@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/background">
+   <!-- tools:context=".MainActivity"  Do I need this?-->
+    <!-- android:orientation="vertical" this line fixes the issue of buttons on top eachother -->
+
+
+    <Space
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/createPledgeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Create Pledge" />
+
+    <Button
+        android:id="@+id/viewPledgesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Pledges"
+        android:layout_marginTop="48dp" />
+
+    <Button
+        android:id="@+id/myPledgesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Pledges"
+        android:layout_marginTop="48dp"
+        />
+
+    <Button
+        android:id="@+id/myProgressButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Progress"
+        android:layout_marginTop="48dp"/>
+
+    <Button
+        android:id="@+id/notificationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:layout_marginTop="48dp" />
+
+    <!-- Reminder: add profile button if I have time -->
+
+ <Space
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
